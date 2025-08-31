@@ -3,73 +3,51 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SignalFlow — AI Data & Automation for Agencies & E‑commerce</title>
-  <meta name="description" content="SignalFlow automates your data, turns metrics into decisions, and delivers AI-driven recommendations that increase revenue and cut costs." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <title>Landing — Layout Only</title>
+  <meta name="description" content="Landing page layout (placeholders)." />
   <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7c5cff; --glass: rgba(255,255,255,0.04);
-      --maxw:1100px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
+    :root{--bg:#ffffff;--text:#000000;--muted:#3e537c;--accent:#2563eb;--card:#f8fafc;--maxw:1100px;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
     *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,var(--bg),#071025);color:#e6eef8;line-height:1.45}
-    .wrap{max-width:var(--maxw);margin:48px auto;padding:0 24px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:48px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
     .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4ac1ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#021225}
-    h1,h2,h3{margin:0}
+    .logo{width:44px;height:44px;border-radius:8px;background:#e6eef8;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--text)}
     nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
 
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:48px}
-    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:32px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    .kicker{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:700;font-size:13px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;margin-bottom:36px}
+    .hero-card{background:var(--card);padding:28px;border-radius:12px}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:700;font-size:13px}
     .lead{font-size:28px;font-weight:700;margin-top:12px}
     .sub{color:var(--muted);margin-top:10px}
-    .cta-row{margin-top:22px;display:flex;gap:12px}
-    .btn{background:var(--accent);border:none;color:#041025;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer}
-    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .cta-row{margin-top:18px;display:flex;gap:12px}
+    .btn{background:var(--accent);border:none;color:white;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid #e6eef8;color:var(--muted)}
 
-    /* Offers */
-    .offers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
-    .offer{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
-    .offer h4{margin-top:6px;margin-bottom:8px}
-    .muted{color:var(--muted);font-size:14px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:var(--card);padding:16px;border-radius:10px;border:1px solid rgba(0,0,0,0.04)}
 
-    /* Features */
-    .features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:40px 0}
-    .feature{background:var(--card);padding:20px;border-radius:12px}
-
-    /* Pricing */
-    .pricing{display:flex;gap:18px;margin:28px 0}
-    .price-card{flex:1;padding:20px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
-    .price{font-weight:800;font-size:28px}
-
-    /* Testimonials */
-    .testimonials{display:flex;gap:14px;overflow:hidden}
-    .test{background:var(--glass);padding:18px;border-radius:12px;color:var(--muted)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0}
+    .pricing{display:flex;gap:14px;margin:18px 0}
+    .price-card{flex:1;padding:16px;border-radius:10px;background:var(--card);border:1px solid rgba(0,0,0,0.04)}
 
     form.contact{display:flex;flex-direction:column;gap:10px}
-    input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px;border-radius:8px;color:inherit}
+    input,textarea,select{background:white;border:1px solid #e6eef8;padding:10px;border-radius:8px;color:var(--text)}
 
-    footer{padding:34px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:40px}
+    footer{padding:26px 0;color:var(--muted);border-top:1px solid #f1f5f9;margin-top:36px}
 
-    /* Responsive */
-    @media (max-width:980px){.hero{grid-template-columns:1fr;}.offers{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.pricing{flex-direction:column}.offers{gap:12px}}
-    @media (max-width:520px){.offers{grid-template-columns:1fr}.wrap{margin:24px auto;padding:0 16px}}
-
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.pricing{flex-direction:column}}
+    @media (max-width:520px){.grid-3{grid-template-columns:1fr}.wrap{margin:20px auto;padding:0 16px}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo">SF</div>
+        <div class="logo">LOGO</div>
         <div>
-          <div style="font-weight:800">SignalFlow</div>
-          <div style="font-size:12px;color:var(--muted)">AI Data & Automation for agencies & e‑commerce</div>
+          <div style="font-weight:800">Company Name</div>
+          <div style="font-size:12px;color:var(--muted)">Short tagline / one‑liner</div>
         </div>
       </div>
       <nav>
@@ -82,141 +60,60 @@
 
     <section class="hero">
       <div class="hero-card">
-        <span class="kicker">Launch fast • Drive ROI</span>
-        <h1 class="lead">Turn scattered data into decisions. Automate reporting, predictions & ad optimizations.</h1>
-        <p class="sub">We build data pipelines, automations, and AI decision engines that increase conversions, cut manual reporting time, and give teams recommendations they can act on — not just charts.</p>
+        <span class="kicker">[Kicker]</span>
+        <h1 class="lead">[Hero title — focus on value, short]</h1>
+        <p class="sub">[One-sentence supporting subhead. Keep it concise and clear.]</p>
         <div class="cta-row">
-          <button class="btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Get a free audit</button>
-          <button class="btn secondary" onclick="window.location='#offers'">See offers</button>
-        </div>
-
-        <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
-          <div style="font-size:13px;color:var(--muted)">Trusted by</div>
-          <div style="display:flex;gap:8px;margin-left:8px;align-items:center">
-            <div style="padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02);font-weight:700">AgencyX</div>
-            <div style="padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02);font-weight:700">EcomPro</div>
-            <div style="padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02);font-weight:700">ScaleLab</div>
-          </div>
+          <button class="btn">Primary CTA</button>
+          <button class="btn secondary">Secondary CTA</button>
         </div>
       </div>
 
-      <aside style="max-width:420px">
-        <div style="font-size:13px;color:var(--muted);margin-bottom:10px">Featured offers</div>
-        <div class="offers">
-          <div class="offer">
-            <div style="font-size:12px;color:var(--accent);font-weight:800">MVP Automation</div>
-            <h4>Starter pipeline + dashboard</h4>
-            <div class="muted">1-week setup • ETL, dashboard, 1x decision rule</div>
-          </div>
-
-          <div class="offer">
-            <div style="font-size:12px;color:var(--accent);font-weight:800">Growth Engine</div>
-            <h4>Predictive LTV & ad scheduling</h4>
-            <div class="muted">4–6 weeks • ML model, scheduled actions, reporting</div>
-          </div>
-
-          <div class="offer">
-            <div style="font-size:12px;color:var(--accent);font-weight:800">Enterprise Stack</div>
-            <h4>Custom data platform & automation</h4>
-            <div class="muted">Ongoing • custom models, SLOs, API integrations</div>
-          </div>
+      <aside>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:8px">Featured blocks</div>
+        <div class="grid-3">
+          <div class="card">Offer 1 (title + short line)</div>
+          <div class="card">Offer 2 (title + short line)</div>
+          <div class="card">Offer 3 (title + short line)</div>
         </div>
       </aside>
     </section>
 
     <section id="features">
-      <h2 style="font-size:20px;margin-bottom:12px">What we build</h2>
+      <h2 style="font-size:18px;margin-bottom:12px">Features / What we do</h2>
       <div class="features">
-        <div class="feature">
-          <h3>Data plumbing & integrations</h3>
-          <p class="muted">Connect Google Analytics, ad platforms, CRMs, and product data into a single, queryable lake. Transform, test, and document pipelines.</p>
-        </div>
-        <div class="feature">
-          <h3>Decision engines</h3>
-          <p class="muted">Automated recommendations—bid adjustments, inventory alerts, customer re-engagement flows—backed by models and clear business rules.</p>
-        </div>
-        <div class="feature">
-          <h3>Actionable dashboards</h3>
-          <p class="muted">Readable dashboards that surface the next action, not just charts. Drilldowns, anomaly alerts, and executive summaries.</p>
-        </div>
-        <div class="feature">
-          <h3>Outcome-first SLOs</h3>
-          <p class="muted">We measure work by outcomes—conversion lift, CAC reduction, time saved—so every project ties back to ROI.</p>
-        </div>
+        <div class="card">Feature 1 — short descriptor</div>
+        <div class="card">Feature 2 — short descriptor</div>
+        <div class="card">Feature 3 — short descriptor</div>
+        <div class="card">Feature 4 — short descriptor</div>
       </div>
     </section>
 
     <section id="pricing">
-      <h2 style="font-size:20px;margin-bottom:12px">Pricing & engagement</h2>
+      <h2 style="font-size:18px;margin-bottom:12px">Pricing / Plans</h2>
       <div class="pricing">
-        <div class="price-card">
-          <div style="font-size:13px;color:var(--muted);">One-time</div>
-          <div class="price">Starter — $3,500</div>
-          <div class="muted" style="margin-top:8px">MVP pipeline, dashboard, 1 decision rule, 1-week delivery.</div>
-          <ul class="muted" style="margin-top:12px">
-            <li>Data connectors</li>
-            <li>Basic dashboard</li>
-            <li>Implementation handoff</li>
-          </ul>
-        </div>
-
-        <div class="price-card">
-          <div style="font-size:13px;color:var(--muted);">Monthly</div>
-          <div class="price">Growth — $1,200/month</div>
-          <div class="muted" style="margin-top:8px">Includes monitoring, weekly reports, and model retraining cadence.</div>
-          <ul class="muted" style="margin-top:12px">
-            <li>Alerts & ops</li>
-            <li>Quarterly optimization</li>
-            <li>Dedicated Slack support</li>
-          </ul>
-        </div>
-
-        <div class="price-card">
-          <div style="font-size:13px;color:var(--muted);">Custom</div>
-          <div class="price">Enterprise</div>
-          <div class="muted" style="margin-top:8px">Custom scope, SSO, SLAs, and on-call support. Priced per engagement.</div>
-        </div>
+        <div class="price-card">Plan A — price placeholder</div>
+        <div class="price-card">Plan B — price placeholder</div>
+        <div class="price-card">Plan C — custom / enterprise</div>
       </div>
     </section>
 
-    <section>
-      <h2 style="font-size:20px;margin-bottom:12px">What customers say</h2>
-      <div class="testimonials">
-        <div class="test"><strong>"Cut our reporting time by 80%"</strong><div class="muted" style="margin-top:6px">— Head of Ops, Growth Agency</div></div>
-        <div class="test"><strong>"Model-driven ad pacing raised ROAS 23%"</strong><div class="muted" style="margin-top:6px">— Founder, DTC Brand</div></div>
-        <div class="test"><strong>"Fast setup, immediate value"</strong><div class="muted" style="margin-top:6px">— Product Lead, EcomPro</div></div>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:32px">
-      <h2 style="font-size:20px;margin-bottom:12px">Start with a free audit</h2>
-      <div style="display:grid;grid-template-columns:1fr 360px;gap:20px">
-        <div style="background:var(--card);padding:18px;border-radius:12px">
-          <p class="muted">Tell us about your stack and biggest data pain. We'll send a short audit with quick wins and a roadmap you can use immediately.</p>
+    <section id="contact" style="margin-top:18px">
+      <h2 style="font-size:18px;margin-bottom:12px">Contact / Lead capture</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:16px">
+        <div class="card">
+          <p style="color:var(--muted)">Short intro text — ask for name, email, message.</p>
           <form id="contact-form" class="contact">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="company" placeholder="Company" >
-            <select name="interest">
-              <option value="mvp">MVP automation — fast</option>
-              <option value="growth">Growth engine — predictive</option>
-              <option value="enterprise">Enterprise — custom</option>
-            </select>
-            <textarea name="notes" rows="4" placeholder="Describe your biggest data problem (2–3 sentences)"></textarea>
-            <button class="btn" type="submit">Request audit</button>
-            <div style="font-size:12px;color:var(--muted);margin-top:8px">No credit card. 48-hour response time.</div>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="company" placeholder="Company (optional)">
+            <textarea name="message" rows="4" placeholder="Message"></textarea>
+            <button class="btn" type="submit">Send</button>
           </form>
         </div>
 
-        <div style="background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px">
-          <h3 style="margin-bottom:6px">Quick wins we often find</h3>
-          <ul class="muted">
-            <li>Duplicate tracking causing double conversions</li>
-            <li>Unconnected ad spend to revenue data</li>
-            <li>No automated ad scheduling tied to predicted LTV</li>
-            <li>Manual dashboard exports and stale reports</li>
-          </ul>
-          <div style="margin-top:12px;font-size:13px;color:var(--muted)">Prefer email? hello@signalflow.ai</div>
+        <div class="card">
+          <div style="font-size:13px;color:var(--muted)">Optional sidebar — quick links, FAQs, or contact info.</div>
         </div>
       </div>
     </section>
@@ -224,23 +121,20 @@
     <footer>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
         <div>
-          <div style="font-weight:800">SignalFlow</div>
-          <div class="muted">AI data infrastructure & decision systems for niche businesses</div>
+          <div style="font-weight:800">Company Name</div>
+          <div style="color:var(--muted);font-size:13px">Short footer note or legal</div>
         </div>
-        <div class="muted">© <span id="year"></span> SignalFlow — Privacy • Terms</div>
+        <div style="color:var(--muted);font-size:13px">© <span id="year"></span></div>
       </div>
     </footer>
   </div>
 
   <script>
     document.getElementById('year').innerText = new Date().getFullYear();
-    // simple front-end form handler (replace with your backend)
+    // placeholder form handler
     document.getElementById('contact-form').addEventListener('submit',function(e){
       e.preventDefault();
-      const data = new FormData(e.target);
-      // simple validation + local success state
-      e.target.querySelector('button').innerText = 'Sending...';
-      setTimeout(()=>{ e.target.reset(); e.target.querySelector('button').innerText='Request audit'; alert('Thanks! We\'ll email your audit within 48 hours.'); },700);
+      alert('Form submit (layout only)');
     });
   </script>
 </body>
