@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background: #4f46e5;
+  background: #b9b9b9;
   color: white;
   padding: 2rem;
   text-align: center;
@@ -18,7 +18,7 @@ button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background: white;
-  color: #4f46e5;
+  color: #b9b9b9;
   border: none;
   border-radius: 5px;
   cursor: pointer;
