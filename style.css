@@ -139,7 +139,45 @@ nav a.active {
 footer {
   background: #222;
   color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #f4b400;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
