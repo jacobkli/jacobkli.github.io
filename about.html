@@ -26,8 +26,14 @@
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 My Website</p>
-  </footer>
+  <footer id="footer"></footer>
+  <script>
+    // Load footer content
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 </body>
 </html>

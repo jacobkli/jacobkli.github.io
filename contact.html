@@ -18,7 +18,7 @@
 
   <main>
     <h1>Contact Me</h1>
-    <p>[Add your email, social links, or form here]</p>
+    <p>Email me at jacobklimack89@gmail.com</p>
     <form class="contact-form">
       <input type="text" placeholder="Your Name">
       <input type="email" placeholder="Your Email">
@@ -27,8 +27,14 @@
     </form>
   </main>
 
-  <footer>
-    <p>© 2025 My Website</p>
-  </footer>
+  <footer id="footer"></footer>
+  <script>
+    // Load footer content
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 </body>
 </html>

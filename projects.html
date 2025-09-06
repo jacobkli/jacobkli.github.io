@@ -22,23 +22,29 @@
       <div class="card">
         <div class="placeholder">Project Image</div>
         <h2>Project Title</h2>
-        <p>Short description of your project goes here.</p>
+        <p>project description</p>
       </div>
       <div class="card">
         <div class="placeholder">Project Image</div>
         <h2>Project Title</h2>
-        <p>Another project description goes here.</p>
+        <p>project description</p>
       </div>
       <div class="card">
         <div class="placeholder">Project Image</div>
         <h2>Project Title</h2>
-        <p>Another project description goes here.</p>
+        <p>project description</p>
       </div>
     </div>
   </main>
 
-  <footer>
-    <p>© 2025 My Website</p>
-  </footer>
+  <footer id="footer"></footer>
+  <script>
+    // Load footer content
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
