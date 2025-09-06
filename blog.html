@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="nav"></header>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h1>My Blog</h1>
+    <div class="grid">
+      <div class="card">
+        <h2>First Blog Post</h2>
+        <p>This is where your blog post preview goes. You can write about your journey, projects, or tips.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="card">
+        <h2>Second Blog Post</h2>
+        <p>Another blog entry. Keep it short here, then link to a full post if you want.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="card">
+        <h2>Third Blog Post</h2>
+        <p>Write anything you’d like — tutorials, reviews, updates, or personal thoughts.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">Loading footer...</footer>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

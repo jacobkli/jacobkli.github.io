@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="nav"></header>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h1>Customer Reviews</h1>
+    <div class="grid">
+      <div class="card">
+        <p>"Amazing website template, super clean and modern!"</p>
+        <p><strong>- Alex</strong></p>
+      </div>
+      <div class="card">
+        <p>"I love the simplicity — easy to customize for my portfolio."</p>
+        <p><strong>- Jamie</strong></p>
+      </div>
+      <div class="card">
+        <p>"The footer and navigation system saved me so much time."</p>
+        <p><strong>- Taylor</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">Loading footer...</footer>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
