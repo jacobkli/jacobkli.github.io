@@ -15,36 +15,34 @@ body {
 /* Navigation Bar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo on left, links on right */
   align-items: center;
-  padding: 1rem 2rem;
-  background: #222;
+  background: #222; /* dark background */
+  padding: 10px 20px;
+}
+
+.logo {
   color: #fff;
+  margin: 0;
 }
 
-.navbar .logo a {
-  color: #f4b400;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.navbar .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px; /* spacing between links */
   margin: 0;
   padding: 0;
 }
 
-.navbar .nav-links li a {
-  color: #fff;
+.nav-links a {
   text-decoration: none;
+  color: #fff;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.navbar .nav-links li a:hover {
-  color: #f4b400;
+.nav-links a:hover {
+  color: #1e90ff; /* highlight on hover */
 }
 
 /* Hero */
