@@ -60,21 +60,22 @@ a {
 }
 
 /* --------------------
-   Hero Section
+   Hero Section (2 staggered images)
 -------------------- */
 .hero {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 80px 20px;
+  align-items: flex-start;
+  gap: 20px;
   max-width: 1200px;
   margin: auto;
-  flex-wrap: wrap;
+  padding: 80px 20px;
 }
 
 .hero-text {
-  flex: 1;
-  padding: 20px;
+  flex: 1 1 400px;
+  z-index: 2;
 }
 
 .hero-text h1 {
@@ -86,19 +87,47 @@ a {
 .hero-text p {
   font-size: 1.2rem;
   color: #555;
+  line-height: 1.8;
 }
 
-.hero-image {
-  flex: 1;
-  height: 300px;
-  margin: 20px;
+.hero-images {
+  position: relative;
+  flex: 1 1 400px;
+  min-height: 250px;
+}
+
+/* Top image */
+.image-top {
+  width: 250px;
+  height: 180px;
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   background-color: #e0e0e0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.image-top:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* Side image */
+.image-side {
+  width: 180px;
+  height: 250px;
+  border-radius: 12px;
+  background-color: #d0d0d0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.image-side:hover {
+  transform: translateY(-5px) scale(1.03);
 }
 
 /* --------------------
@@ -183,4 +212,3 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
-
