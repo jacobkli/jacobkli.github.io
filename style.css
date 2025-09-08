@@ -60,21 +60,20 @@ a {
 }
 
 /* --------------------
-   Hero Section (2 staggered images)
+   Hero Section
 -------------------- */
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
+  padding: 80px 20px;
   max-width: 1200px;
   margin: auto;
-  padding: 80px 20px;
+  gap: 40px;
 }
 
 .hero-text {
-  flex: 1 1 400px;
+  flex: 1;
   z-index: 2;
 }
 
@@ -88,46 +87,79 @@ a {
   font-size: 1.2rem;
   color: #555;
   line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.hero-images {
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #155fc7;
+  transform: translateY(-2px);
+}
+
+/* Hero Visual Stack */
+.hero-visual {
+  flex: 1;
   position: relative;
-  flex: 1 1 400px;
-  min-height: 250px;
+  min-height: 350px;
 }
 
-/* Top image */
-.image-top {
-  width: 250px;
-  height: 180px;
-  border-radius: 12px;
-  background-color: #e0e0e0;
+.hero-img {
   position: absolute;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+.img1 {
   top: 0;
-  left: 50px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  right: 40px;
+  width: 260px;
+  height: 340px;
+  background-image: url("your-first-image.jpg");
 }
 
-.image-top:hover {
-  transform: translateY(-5px) scale(1.03);
+.img2 {
+  bottom: 0;
+  left: 40px;
+  width: 220px;
+  height: 280px;
+  background-image: url("your-second-image.jpg");
 }
 
-/* Side image */
-.image-side {
-  width: 180px;
-  height: 250px;
-  border-radius: 12px;
-  background-color: #d0d0d0;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.image-side:hover {
-  transform: translateY(-5px) scale(1.03);
+  .hero-visual {
+    margin-top: 40px;
+    min-height: 300px;
+  }
+
+  .img1, .img2 {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .img1 { top: 0; right: 0; }
+  .img2 { bottom: 0; left: 0; margin-top: 20px; }
 }
 
 /* --------------------
